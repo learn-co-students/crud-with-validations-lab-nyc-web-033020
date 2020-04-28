@@ -1,0 +1,6 @@
+<h3><%= $song.title %></h3>
+<p><%= @song.artist_name %></p>
+<p><%= @song.released if not false %></p>
+<p><%= @song.release_year if not nil %></p>
+<p><%= @song.genre if not nil %></p>
+<%= link_to 'Edit' edit_song_path(@song) %>
